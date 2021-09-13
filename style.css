@@ -11,4 +11,13 @@ header{
 .contactus{
     background-image: url(./assets/backgrounds/c_image.jpg);
     background-size: cover;
+    height: 75vh;
+}
+#msg{
+    height: 7000%;
+    width: 80%;
+}
+input{
+    color: #fff;
+    background:transparent;
 }
