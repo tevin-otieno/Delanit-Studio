@@ -3,6 +3,9 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+h1{
+    padding: 1rem;
+}
 header{
     background-image: url(./assets/backgrounds/h_img.jpg);
     background-size: cover;
@@ -29,4 +32,10 @@ input{
 .pot{
     max-width: 30vh;
     max-height: 30vh;
+}
+.mouse{
+    transform: translateY(-50px);
+}
+#txtDes, #txtDev, #txtPM{
+    display: none;
 }
