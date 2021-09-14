@@ -22,8 +22,10 @@ header{
     height: 75vh;
 }
 #msg{
-    height: 7000%;
-    width: 80%;
+    height: 30vh;
+    width: 80vw;
+    border: white 2px solid;
+    margin: 1rem;
 }
 input{
     color: #fff;
@@ -42,3 +44,12 @@ input{
 #toggleDes, #toggleDev, #togglePM{
     max-width: 30vw;
 }
+#name, #email{
+    border: white solid 2px;
+    margin: 1rem;
+    min-width: 40vw;
+}
+::placeholder { 
+    color: white;
+    opacity: 1;
+  }
