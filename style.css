@@ -39,3 +39,6 @@ input{
 #txtDes, #txtDev, #txtPM{
     display: none;
 }
+#toggleDes, #toggleDev, #togglePM{
+    max-width: 30vw;
+}

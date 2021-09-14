@@ -1,27 +1,37 @@
 $(document).ready(function(){
-    $( "#toggleDes" ).click(function() {     
-        if($('#txtDes:visible')){
-            $('#imgDes').hide();
-            $('#txtDes').show();
-        }else{
-            $('#imgDes').show();
-            $('#txtDes').hide();
-    
-    }});
-    $( "#toggleDev" ).click(function() {     
-        if($('#txtDev:visible')){
-            $('#imgDev').hide();
-            $('#txtDev').show();
-        }else{
-            $('#imgDev').show();
-            $('#txtDev').hide();       
-    }});
-    $( "#togglePM" ).click(function() {     
-        if($('#txtPM:visible')){
-            $('#imgPM').hide();
-            $('#txtPM').show();
-        }else{
-            $('#imgPM').show();
-            $('#txtPM').hide();        
-    }});
-})
+    $('#imgDes').click(function(){     
+        $('#imgDes').hide();
+        $('#txtDes').show();
+    });
+    $('#txtDes').click(function(){
+        $('#imgDes').show();
+        $('#txtDes').hide();
+    });
+    $('#imgDev').click(function(){
+        $('#imgDev').hide();
+        $('#txtDev').show();
+    });
+    $('#txtDev').click(function(){
+        $('#imgDev').show();
+        $('#txtDev').hide();
+    });
+    $('#imgPM').click(function(){
+        $('#imgPM').hide();
+        $('#txtPM').show();
+    });
+    $('#txtPM').click(function(){
+        $('#imgPM').show();
+        $('#txtPM').hide();
+    });     
+});
+
+$(function () {
+    $(document).tooltip();
+});
+
+$(document).mousemove(function (event) {
+    $(document).tooltip("option", "position", {
+        my: "left+3 bottom-3",
+        of: event
+    });
+});
